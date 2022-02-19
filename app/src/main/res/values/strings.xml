@@ -1,0 +1,13 @@
+<resources>
+    <string name = "app_name">StateDataManagement</string>
+    <string name = "welcome_to_ready_to_travel">Welcome to Ready To Travel</string>
+    <string name = "log_in_with_email_address">Log in with email address</string>
+    <string name = "log_in_with_facebook">Log in with Facebook</string>
+    <string name = "welcome_intro">Sign up with Facebook for the most \n fulfilling trip planning
+        experience with us!</string>
+    <string name = "title_activity_fullscreen">FullscreenActivity</string>
+    <string name = "dummy_button">Dummy Button</string>
+    <string name = "dummy_content">DUMMY\nCONTENT</string>
+    <string name = "instruction">Complete the form below to create \n your Ready to Travel account
+        .</string>
+</resources>

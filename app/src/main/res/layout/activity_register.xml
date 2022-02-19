@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:fillViewport = "true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        tools:context = ".RegisterActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id = "@+id/constraintLayout"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:background = "@color/grey"
+            android:padding = "10dp"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent">
+
+            <ImageView
+                android:id = "@+id/btnBack"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:src = "@drawable/ic_baseline_arrow_back_ios_new_24"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"/>
+
+            <TextView
+                android:id = "@+id/textView2"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:text = "Almost There!"
+                android:textColor = "@color/black"
+                android:textSize = "@dimen/text_regular_3x"
+                android:textStyle = "bold"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/btnBack"/>
+
+            <TextView
+                android:id = "@+id/textView3"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:text = "@string/instruction"
+                android:textColor = "#111111"
+                android:textSize = "@dimen/text_regular_2x"
+                android:textStyle = "bold"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "@+id/textView2"
+                app:layout_constraintTop_toBottomOf = "@+id/textView2"/>
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:text = "*Mandatory"
+                android:textStyle = "bold"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/textView3"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width = "100dp"
+            android:layout_height = "100dp"
+            android:layout_marginEnd = "8dp"
+            android:layout_marginBottom = "-30dp"
+            android:src = "@drawable/guitar"
+            app:layout_constraintBottom_toBottomOf = "@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf = "parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayout"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "16dp"
+            app:boxBackgroundColor = "@color/white"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/constraintLayout">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id = "@+id/etFirstName"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:hint = "First Name *"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayout2"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            app:boxBackgroundColor = "@color/white"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/textInputLayout">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id = "@+id/etLastName"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:hint = "Last Name *"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayout7"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            app:boxBackgroundColor = "@color/white"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/textInputLayout2">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id = "@+id/etEmail"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:hint = "Email Address *"
+                android:inputType = "textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayout6"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            app:boxBackgroundColor = "@color/white"
+            app:layout_constraintEnd_toStartOf = "@+id/switch1"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/textInputLayout7">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id = "@+id/etDob"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:drawableRight = "@drawable/dob"
+                android:hint = "Date of birth *"
+                android:inputType = "number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayout5"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            app:boxBackgroundColor = "@color/white"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/textInputLayout6">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id = "@+id/etNationality"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:hint = "Nationality *"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayout4"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            app:boxBackgroundColor = "@color/white"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/textInputLayout5">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id = "@+id/etCountry"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:hint = "Country of Residence *"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayout3"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            app:boxBackgroundColor = "@color/white"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/textInputLayout4">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id = "@+id/etMobNo"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:hint = "Mobile no.(Optional) *"
+                android:inputType = "phone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id = "@+id/switch1"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginEnd = "8dp"
+            android:text = "Female"
+            app:layout_constraintBottom_toBottomOf = "@+id/textInputLayout6"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintTop_toTopOf = "@+id/textInputLayout6"/>
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id = "@+id/btnCreate"
+            android:layout_width = "0dp"
+            android:layout_height = "50dp"
+            android:layout_marginStart = "16dp"
+            android:layout_marginEnd = "16dp"
+
+            android:layout_marginBottom = "8dp"
+            android:background = "@drawable/gradient_background"
+            android:text = "Create my account now"
+            android:textAllCaps = "false"
+            android:textStyle = "bold"
+            app:backgroundTint = "@null"
+            app:cornerRadius = "10dp"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
